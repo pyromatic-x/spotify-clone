@@ -65,4 +65,4 @@ node_modules/
 
 # dotenv environment variables file
 .env
-src/constants.ts
+src/constants.js

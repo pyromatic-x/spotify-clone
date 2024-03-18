@@ -2,7 +2,7 @@ import { randomColor } from "../utils/strings";
 
 export const playerPlaylist = [
   {
-    id: crypto.randomUUID(),
+    id: "907sdf80qwe",
     order: 0,
     name: "Homesick",
     authors: ["Fred V", "Lottie Jones"],
@@ -15,7 +15,7 @@ export const playerPlaylist = [
       "https://i1.sndcdn.com/artworks-a4INM0ETkGOzBsB4-0wwU7w-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "aqwe345l12m3",
     order: 1,
     name: "I Follow Rivers (The Magician Remix)",
     authors: ["Lykke Li"],
@@ -27,7 +27,7 @@ export const playerPlaylist = [
     cover: "https://i1.sndcdn.com/artworks-000004841926-yxktof-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "2mm6m447n",
     order: 2,
     name: "Fingerprints",
     authors: ["Hybrid Minds", "Grace Grundy"],
@@ -40,7 +40,7 @@ export const playerPlaylist = [
       "https://geo-media.beatsource.com/image_size/1400x1400/3/5/a/35a32b4b-0076-4097-9d76-fd43ae961289.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "eerl345lm",
     order: 3,
     name: "Throne",
     authors: ["Bring Me The Horizon"],
@@ -52,7 +52,7 @@ export const playerPlaylist = [
     cover: "https://i1.sndcdn.com/artworks-000137618466-e9hluk-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "qlpkl21l123",
     order: 4,
     name: "Там Ревели Горы",
     authors: ["MiyaGi", "Andy Panda"],
@@ -65,7 +65,7 @@ export const playerPlaylist = [
       "https://images.genius.com/a352a0c6e86b9d22129161b29c60479e.1000x1000x1.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "qegwe02lm4",
     order: 5,
     name: "Big Shot Cream Soda",
     authors: ["$uicideboy$", "Shakewell"],
@@ -78,7 +78,7 @@ export const playerPlaylist = [
       "https://i1.sndcdn.com/artworks-7vk7wPMOWXWJxDCB-726nQQ-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "qklzas902",
     order: 6,
     name: "Fat Lip",
     authors: ["Sum 41"],
@@ -90,7 +90,7 @@ export const playerPlaylist = [
     cover: "https://upload.wikimedia.org/wikipedia/en/6/6e/Sum41fatlip.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "werwe53534",
     order: 7,
     name: "Sleepwalking",
     authors: ["Bring Me The Horizon"],
@@ -102,7 +102,7 @@ export const playerPlaylist = [
     cover: "https://i.scdn.co/image/ab67616d0000b273d972f5e1a91d9f5b9d3fa28d",
   },
   {
-    id: crypto.randomUUID(),
+    id: "rty456",
     order: 8,
     name: "Can't Stop",
     authors: ["Bare Up"],
@@ -115,7 +115,7 @@ export const playerPlaylist = [
       "https://i1.sndcdn.com/artworks-IEFNUuVcz1zbTcCl-u1zeLA-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "f0qwedas0",
     order: 9,
     name: "Minor",
     authors: ["MiyaGi", "Andy Panda"],
@@ -127,7 +127,7 @@ export const playerPlaylist = [
     cover: "https://i.ytimg.com/vi/kr2Pv4DSFVQ/maxresdefault.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "mk2m3k4m234",
     order: 10,
     name: "Vibration (One More Time)",
     authors: ["Sub Focus", "AR-CO"],
@@ -152,7 +152,7 @@ export const playerPlaylist = [
       "https://upload.wikimedia.org/wikipedia/ru/thumb/b/bd/Dani_California.jpg/274px-Dani_California.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "7l234mmmm213",
     order: 12,
     name: "Juicy",
     authors: ["Doja Cat", "Tyga"],
@@ -164,7 +164,7 @@ export const playerPlaylist = [
     cover: "https://i1.sndcdn.com/artworks-8PdIjBHZMgMX-0-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "xk1l23kl",
     order: 13,
     name: "Lights",
     authors: ["Charlotte Plank", "Hybrid Minds"],
@@ -176,7 +176,7 @@ export const playerPlaylist = [
     cover: "https://i.ytimg.com/vi/pkQ9OwXx4-w/maxresdefault.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "qwe123",
     order: 14,
     name: "KINO",
     authors: ["THE DAWLESS", "Кассета"],
@@ -188,7 +188,7 @@ export const playerPlaylist = [
       "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ad/f4/36/adf43621-003b-46fa-d544-e0e257737b34/dj.yvotpdvm.jpg/600x600bf-60.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "uio789",
     order: 15,
     name: "Круги на воде",
     authors: ["Slot"],
@@ -200,7 +200,7 @@ export const playerPlaylist = [
       "https://t2.genius.com/unsafe/504x504/https%3A%2F%2Fimages.genius.com%2F39c2c4ab9bb08b785baa5b2bae3904b0.939x939x1.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "091n31n23lk",
     order: 16,
     name: "DNA",
     authors: ["Kendrick Lamar"],
@@ -212,7 +212,7 @@ export const playerPlaylist = [
     cover: "https://i1.sndcdn.com/artworks-db7Z9vu52zaH-0-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "nl1knm2n13",
     order: 17,
     name: "High Hopes",
     album: "High Hopes",
@@ -225,7 +225,7 @@ export const playerPlaylist = [
       "https://i.discogs.com/BWDvogGJrpnvqiApphdWHlbs9AXZtcQ-0SvGklWCpbY/rs:fit/g:sm/q:90/h:554/w:554/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NTU3/MjMyLTE1NzcwMjA1/NjEtODg5OC5qcGVn.jpeg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "csc2knbk23b4",
     order: 18,
     name: "Say The Word",
     album: "Say The Word",
@@ -237,7 +237,7 @@ export const playerPlaylist = [
     cover: "https://i1.sndcdn.com/artworks-Bi8FioUJhV05-0-t500x500.jpg",
   },
   {
-    id: crypto.randomUUID(),
+    id: "34mlm1l534l5",
     order: 19,
     name: "Make It There",
     album: "Make It There EP",

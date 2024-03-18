@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import theme from "../../theme";
+import { theme } from "../../theme";
 
 const defaultHomePageBackground = theme.palette.background.purple;
 
