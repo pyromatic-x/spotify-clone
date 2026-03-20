@@ -1,0 +1,30 @@
+/** biome-ignore-all lint/complexity/noImportantStyles: override shadcn styles */
+
+.toaster.group li {
+	align-items: start !important;
+}
+.toaster.group li [data-icon] {
+	position: relative;
+	top: 3px;
+}
+
+[data-sonner-toast] [data-close-button="true"] {
+	right: -15px !important;
+	left: unset !important;
+}
+
+[data-sonner-toast][data-type="success"] {
+	color: #1f9857 !important;
+	border-color: #79dfae !important;
+}
+[data-sonner-toast][data-type="success"] [data-close-button="true"] {
+	border-color: #79dfae !important;
+}
+
+[data-sonner-toast][data-type="error"] {
+	color: #e64141 !important;
+	border-color: #f48e8e !important;
+}
+[data-sonner-toast][data-type="error"] [data-close-button="true"] {
+	border-color: #f48e8e !important;
+}
