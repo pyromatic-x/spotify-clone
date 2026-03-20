@@ -48,7 +48,7 @@ jobs:
           context: .
           file: docker/frontend.Dockerfile
           push: true
-          tags: ${{ env.IMAGE_PREFIX }}client:latest
+          tags: ${{ env.IMAGE_PREFIX }}frontend:latest
 
   build-backend:
     needs: changes
@@ -115,7 +115,7 @@ jobs:
           script: |
             docker login $REGISTRY -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
             if [ "$DEPLOY_FRONTEND" = "true" ]; then
-              docker service update --image ${IMAGE_PREFIX}client:latest --force projects_spotify-clone-client
+              docker service update --image ${IMAGE_PREFIX}frontend:latest --force projects_spotify-clone-frontend
             fi
             if [ "$DEPLOY_BACKEND" = "true" ]; then
               docker service update --image ${IMAGE_PREFIX}backend:latest --force projects_spotify-clone-backend

@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/style/useImportType: runtime import */
 import * as fs from "node:fs";
 import {
 	BadRequestException,
@@ -15,9 +16,8 @@ import {
 	Res,
 } from "@nestjs/common";
 import type { Request, Response } from "express";
-// biome-ignore lint/style/useImportType: runtime import
 import { AppService } from "./app.service";
-import type { ImageQueryDto } from "./dto/image-query.dto";
+import { ImageQueryDto } from "./dto/image-query.dto";
 import {
 	getAudioPathWithExtensionOrThrow,
 	getImagePathWithExtensionOrThrow,

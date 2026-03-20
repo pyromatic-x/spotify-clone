@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import dayjs from "dayjs";
-import { useEffect, useMemo } from "react";
+import { Fragment, useEffect, useMemo } from "react";
 import { BsThreeDots } from "react-icons/bs";
 import { FaLongArrowAltDown } from "react-icons/fa";
 import { useIntersectionObserver } from "usehooks-ts";
@@ -23,7 +23,9 @@ function RouteComponent() {
 	const albums = useMemo(() => {
 		if (!data?.pages) return [];
 
-		return data?.pages.flatMap((t) => t?.albums);
+		return data.pages
+			.filter((t): t is NonNullable<typeof t> => t != null)
+			.flatMap((t) => t.albums);
 	}, [data?.pages]);
 
 	const { ref, isIntersecting } = useIntersectionObserver({
@@ -52,10 +54,10 @@ function RouteComponent() {
 
 				{Boolean(albums.length) &&
 					albums.map((album) => (
-						<>
+						<Fragment key={album._id}>
 							<hr className="border-[#ffffff1a]" />
 							<Card {...album} />
-						</>
+						</Fragment>
 					))}
 
 				<div ref={ref} className="w-0 h-0" />

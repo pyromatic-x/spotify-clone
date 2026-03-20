@@ -1,6 +1,8 @@
+/** biome-ignore-all lint/style/useImportType: runtime import */
+
 import { BadRequestException, Injectable, Logger } from "@nestjs/common";
 import * as sharp from "sharp";
-import type { ImageQueryDto } from "./dto/image-query.dto";
+import { ImageQueryDto } from "./dto/image-query.dto";
 
 @Injectable()
 export class AppService {
