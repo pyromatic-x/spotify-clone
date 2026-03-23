@@ -1,0 +1,11 @@
+.entities-row-wrapper {
+	--margin: calc(40px + -12px + max(0px, (100cqi - 1955px) * 0.5));
+	--margin-start: calc(-12px + -1 * var(--margin));
+	--margin-end: calc(-12px + -1 * var(--margin));
+	margin-inline: var(--margin-start) var(--margin-end);
+}
+
+.entities-row-container {
+	padding-inline-start: calc((var(--margin-start) - -12px) * -1);
+	padding-inline-end: 40px;
+}

@@ -1,0 +1,37 @@
+name: Deploy Notifications
+
+on:
+  workflow_run:
+    workflows: [Deploy]
+    types:
+      - completed
+
+permissions:
+  actions: read
+
+jobs:
+  notify:
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram notification
+        env:
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+          CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          resp=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${REPO}/actions/runs/${RUN_ID}/jobs")
+          icon() { case "$1" in success) echo "✅";; failure) echo "❌";; cancelled) echo "⛔";; *) echo "⏭️";; esac; }
+          frontend=$(echo "$resp" | jq -r '(.jobs // [])[] | select(.name == "build-frontend") | .conclusion // "skipped"' | head -1); frontend=${frontend:-skipped}
+          backend=$(echo "$resp" | jq -r '(.jobs // [])[] | select(.name == "build-backend") | .conclusion // "skipped"' | head -1); backend=${backend:-skipped}
+          media=$(echo "$resp" | jq -r '(.jobs // [])[] | select(.name == "build-media") | .conclusion // "skipped"' | head -1); media=${media:-skipped}
+          deploy=$(echo "$resp" | jq -r '(.jobs // [])[] | select(.name == "deploy") | .conclusion // "skipped"' | head -1); deploy=${deploy:-skipped}
+          msg="Spotify Clone deploy: ${CONCLUSION}
+          Frontend: $(icon "$frontend")
+          Backend: $(icon "$backend")
+          Media: $(icon "$media")
+          Deploy: $(icon "$deploy")"
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d text="$msg"
